@@ -58,6 +58,7 @@ const io = new Server(servidor,{
     pingTimeout : 60000,
     cors : {
         origin: process.env.FRONTEND_URL,
+        methods: ["GET", "POST"]
     },
 });
 
